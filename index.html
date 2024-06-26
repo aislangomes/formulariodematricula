@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <title>Formulário de Matrícula</title>
+  <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+  <main>
+    <header>
+      <span></span>
+      <h2>Voltar</h2>
+      <h1>Formulário de matrícula</h1>
+      <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+    </header>
+    <form>
+      <fieldset>
+        <legend>Informações da crinaça</legend>
+
+        <label for="kidName">Nome completo</label>
+        <input type="text" id="kidName" name="kidName">
+
+        <label for="dateOfBirth">Data de nascimento</label>
+        <input type="date" id="dateOfBirth" name="dateOfBirth" placeholder="dd-mm-yyyy">
+
+        <label for="gender">Sexo</label>
+        <select id="gender" name="gender">
+          <option value="" disabled>Selecione</option>
+          <option value="male">Menino</option>
+          <option value="female">Menina</option>
+        </select>
+
+        <label for="medicInfos">Informações Médicas</label>
+        <textarea id="medicInfos" name="medicInfos"></textarea>
+
+        <label for="birthCertificate">Certidão de nascimento</label>
+        <input type="file" id="birthCertificate" name="birthCertificate">
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Endereço Residencial</legend>
+
+        <label for="cep">CEP</label>
+        <input type="text" id="cep" name="cep">
+
+        <label for="street">Rua</label>
+        <input type="text" id="street" name="street">
+
+        <label for="houseNumber">Número</label>
+        <input type="number" id="houseNumber" name="houseNumber">
+
+        <label for="city">Cidade</label>
+        <input type="text" id="city" name="city"></input>
+
+        <label for="UF">Estado</label>
+        <input type="text" id="UF" name="UF">
+
+      </fieldset>
+      <fieldset>
+        <legend>Informações do responsável</legend>
+
+        <label for="adultName">Nome do responsável</label>
+        <input type="text" id="adultName" name="adultName">
+
+        <label for="phone">Telefone</label>
+        <input type="date" id="phone" name="phone">
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email">
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Opções de matrícula</legend>
+
+        <label for="shift">Seleciona o turno de estudo</label>
+        <div>
+          <input type="radio" id="manha" name="shift" value="manha" checked>
+          <label for="manha">Manha</label>
+        </div>
+        <div>
+          <input type="radio" id="tarde" name="shift" value="tarde">
+          <label for="tarde">Tarde</label>
+        </div>
+
+        <label for="shift">Em qual esporte você gostaria de inscrever seu filho?</label>
+        <div>
+          <input type="radio" id="football" name="sport" value="football" checked>
+          <label for="football">Futebol</label>
+        </div>
+        <div>
+          <input type="radio" id="basket" name="sport" value="basket">
+          <label for="basket">Basquete</label>
+        </div>
+        <div>
+          <input type="radio" id="swim" name="sport" value="swim">
+          <label for="swim">Natação</label>
+        </div>
+        <div>
+          <input type="radio" id="yoga" name="sport" value="yoga">
+          <label for="yoga">Yoga</label>
+        </div>
+        <div>
+          <input type="radio" id="volley" name="sport" value="volley">
+          <label for="volley">Volei</label>
+        </div>
+        <div>
+          <input type="radio" id="fight" name="sport" value="fight">
+          <label for="fight">fight</label>
+        </div>
+      </fieldset>
+
+      <input type="checkbox" id="terms" name="terms"/>
+      <p>Declaro que li e concordo com os <a href="#" target="_blank">Termos e Condições</a> e com a <a href="#" target="_blank">Política de Privacidade</a> da escola Estrela do Amanhã.</p>
+
+      <button formmethod="get">Salvar respostas</button>
+      <button formmethod="post">Fazer matrícula</button>
+    </form>
+
+
+  </main>
+  <aside>
+    <img src="./assets/images/logo.svg" alt="Logomarca Estrelas do Amanhã">
+    <h1>Porque cada momento de <strong>aprendizado</strong> conta</h1>
+    <p>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</p>
+    <img src="./assets/images/Illustration.svg" alt="Imagem de uma professora ensinado 4 crianças">
+  </aside>
+  
+</body>
+</html>

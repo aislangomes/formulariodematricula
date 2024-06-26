@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --font-family: 'Poppins';
+  --h1: 700 3.2rem/120% var(--font-family);
+  --h2: 700 2.4rem/120% var(--font-family);
+  --h3: 700 2.0rem/120% var(--font-family);
+  --txt: 700 1.6rem/120% var(--font-family);
+
+  --brand-lt:#F67841;
+  --brand-mid:#F3541C;
+  --brand-dk:#E43A12;
+
+  --text-pri:#292524;
+  --text-sec:#57534E;
+  --text-ter:#8F8881;
+  --text-hlt:#E43A12;
+
+  --surface-pri:#FFFFFF;
+  --surface-sec:#FEE7D6;
+  --surface-dis:#E7E5E4;
+
+  --stroke-dft:#D6D3D1;
+  --stroke-hlt:#F3541C;
+
+  --semantic-error:#DC2626;
+
+  --orange:#F9A474;
+  --yellow:#FEDF6F;
+  --green:#C7D78D;
+  --blue:#B8CEDC;
+  --violet:#C3B2E7;
+  --pink:#F682A5;
+}
+
+body {
+  font: var(--txt);
+  color: var(--text-pri);
+  display: flex;
+}
+
+h1 {
+  font: var(--h1)
+}
+h2 {
+  font: var(--h2);
+}
+h3 {
+  font: var(--h3);
+  color: var(--text-sec);
+}
