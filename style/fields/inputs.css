@@ -2,7 +2,8 @@ input, textarea, select {
   appearance: none;
   width: 100%;
   border-radius: .8rem;
-  border: 1px solid var(--stroke-dft);
+  border: 2px solid transparent;
+  outline: 1px solid var(--stroke-dft);
   padding: 1.2rem 1.6rem;
 
   font: var(--txt);
@@ -20,8 +21,8 @@ input:focus,
 select:focus,
 textarea:focus,
 input[type="date"]:focus-within{
+  border-color: var(--stroke-hlt);
   outline: .4rem solid var(--surface-sec);
-  border: .1rem solid var(--stroke-hlt);
   outline-offset: .1px;
 }
 
