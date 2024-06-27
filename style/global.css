@@ -8,10 +8,10 @@
   font-size: 62.5%;
 
   --font-family: 'Poppins';
-  --h1: 700 3.2rem/120% var(--font-family);
-  --h2: 700 2.4rem/120% var(--font-family);
-  --h3: 700 2.0rem/120% var(--font-family);
-  --txt: 700 1.6rem/120% var(--font-family);
+  --h1: 600 4rem/125% var(--font-family);
+  --h2: 600 2.4rem/125% var(--font-family);
+  --h3: 600 1.6rem/125% var(--font-family);
+  --txt: 400 1.6rem/150% var(--font-family);
 
   --brand-lt:#F67841;
   --brand-mid:#F3541C;
@@ -40,18 +40,37 @@
 }
 
 body {
+  overflow: hidden;
   font: var(--txt);
   color: var(--text-pri);
-  display: flex;
 }
-
 h1 {
   font: var(--h1)
 }
 h2 {
   font: var(--h2);
 }
-h3 {
+h3{
   font: var(--h3);
+}
+
+p {
+  font: var(--txt);
   color: var(--text-sec);
+}
+
+img {
+  max-width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
 }

@@ -1,0 +1,46 @@
+#app {
+  display: grid;
+  grid-template-columns: 51.25% 48.75%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  overflow: auto;
+  padding: 6.4rem;
+
+  & .main-container {
+    max-width: 52.8rem;
+    margin-left: auto;
+  }
+
+  & .back {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    margin-bottom: 2.4rem;
+    cursor: pointer;
+  }
+
+  & h2 {
+    margin-bottom: .8rem;
+  }p
+}
+
+aside {
+  background-color: var(--surface-sec);
+  padding: 6.4rem;
+  
+  & .aside-container {
+    max-width: 49.6rem;
+    margin-right: auto;
+
+    & span{i
+      color: var(--text-hlt);
+    }
+
+    & > img {
+      margin-top: 3.2rem;
+    }
+  }
+}
